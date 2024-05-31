@@ -1,0 +1,39 @@
+.article__top{
+	margin-bottom: 70px;
+	.row{
+		gap: 60px;
+	}	
+	h2{
+		font-size: 3rem;
+		margin-bottom: 30px;
+		text-align: left !important;
+	}
+	p{
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	img{
+		width: 50%;
+		border-radius: 25px;
+		object-fit: cover;
+	}
+	.btn{
+		margin-top: 30px;
+		display: block;
+		width: fit-content;
+		height: 35px;
+		line-height: 35px;
+		text-align: center;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.article__top{
+		.row{
+			flex-wrap: wrap;
+		}	
+		img{
+			width: 100%;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+section.hero{
+	background-image: url("../../../assets/img/hero.png");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-size: 45%;
+	.row{
+		height: calc(100vh - 114px);
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 40px;
+	}
+	h1{
+		font-size: 5rem;
+	}
+	p{
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.btn{
+		height: 45px;
+		line-height: 45px;
+		font-size: 20px;
+		padding: 0 25px;
+	}
+}
+
+@media all and (max-width: 768px) {
+	section.hero{
+		background-position: right bottom;
+		background-size: 65%;
+		.row{
+			justify-content: center;
+			padding-bottom: 15vh;
+			align-items: center;
+			text-align: center;
+			gap: 30px;
+		}
+		h1{
+			font-size: 3rem;
+		}
+		p{
+			font-size: 18px;
+			line-height: 28px;
+		}
+		.btn{
+			height: 45px;
+			line-height: 45px;
+			font-size: 16px;
+			padding: 0 25px;
+		}
+	}
+}

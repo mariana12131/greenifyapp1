@@ -1,0 +1,22 @@
+section.events{
+	padding: 30px 0 70px 0;
+	h2{
+		font-size: 3rem;
+	}
+
+	p{
+		font-size: 18px;
+		margin-top: 40px;
+	}
+
+	.events__top{
+		text-align: center;
+	}
+
+	.events__container{
+		justify-content: space-evenly;
+		margin-top: 60px;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+}

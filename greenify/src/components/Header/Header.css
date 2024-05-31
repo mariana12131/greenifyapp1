@@ -1,0 +1,104 @@
+header {
+  padding: 20px 0;
+}
+
+header .row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3E433F;
+  gap: 20px;
+}
+
+header .header__logo img {
+  width: 64px;
+  height: 74px;
+  padding-bottom: 10px;
+}
+
+header nav {
+  gap: 45px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header nav .link {
+  font-size: 1.5rem;
+  color: black;
+}
+
+header .header__burger {
+  width: 45px;
+  height: 26px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  display: none;
+}
+
+header .header__burger figure {
+  border-radius: 5px;
+  height: 4px;
+  width: 100%;
+  background-color: #3E433F;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header .header__burger #burger-2 {
+  width: 60%;
+}
+
+header .header__burger #burger-3 {
+  width: 80%;
+}
+
+@media all and (max-width: 768px) {
+  header .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header nav {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: -130%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    width: 80%;
+    background-color: #F6EEE1;
+    height: 100dvh;
+  }
+  header nav.active {
+    left: 0;
+  }
+  header .header__burger.active #burger-2 {
+    width: 60%;
+  }
+  header .header__burger.active #burger-3 {
+    width: 80%;
+  }
+}
+/*# sourceMappingURL=Header.css.map */

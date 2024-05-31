@@ -1,0 +1,16 @@
+section.articles{
+	padding: 70px 0;
+	h2{
+		font-size: 3rem;
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.articles__more{
+		.row{
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+			gap: 20px;
+		}
+	}
+}

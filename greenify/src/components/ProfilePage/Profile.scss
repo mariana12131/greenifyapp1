@@ -1,0 +1,154 @@
+section.profile{
+	padding: 20px 0 80px 0;
+	.row{
+		gap: 80px;
+	}
+
+	h1, h2{
+		font-size: 30px;
+		font-weight: 500;
+	}
+
+	h3{
+		font-size: 26px;
+		font-weight: 500;
+	}
+
+	.btn{
+		height: 35px;
+		font-weight: 500;
+		font-size: 16px;
+	}
+	.profile__header-user{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 40%;
+		p{
+			margin: 30px 0;
+		}
+		.btn{
+			max-width: 220px;
+		}
+	}
+	.profile__header-task{
+		p{
+			margin: 30px 0;
+		}
+		.task-status{
+			height: 30px;
+			line-height: 30px;
+			padding: 0 15px;
+			border-radius: 15px;
+			margin: 0;
+		}
+	}
+
+	.profile__main{
+		margin-top: 80px;
+	}
+
+	.profile__main-test{
+		flex-shrink: 0;
+		width: 40%;
+
+		.test__list{
+			display: flex;
+			flex-direction: column;
+			gap: 30px;
+			margin-top: 30px;
+		}
+		h3{
+			margin: 10px 0;
+			font-size: 24px;
+		}
+		.test__label{
+			font-size: 22px;
+			color: gray;
+		}
+		.test__status, .test-link{
+			font-size: 16px;
+		}
+		.test__status{
+			height: 30px;
+			border-radius: 15px;
+			line-height: 30px;
+			padding: 0 15px;
+		}
+	}
+
+	.history__list{
+		margin-top: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		.task__status{
+			height: 30px;
+			padding: 0 15px;
+			border-radius: 15px;
+			line-height: 30px;
+			font-size: 16px;
+		}
+		.task__date{
+			height: 30px;
+			line-height: 30px;
+			font-size: 20px;
+		}
+		.task__descr{
+			font-weight: 400;
+			font-size: 22px;
+			margin-bottom: 10px;
+		}
+	}
+}
+
+@media all and (max-width: 1024px) {
+	section.profile{
+		.row{
+			gap: 60px;
+			flex-wrap: wrap;
+		}
+		.profile__header-user{
+			.row{
+				gap: 20px;
+			}
+			width: 100%;
+		}
+		.profile__main-test{
+			.row{
+				gap: 20px;
+			}
+			width: 100%;
+		}
+		.profile__main{
+			margin-top: 40px;
+		}
+		.history__list{
+			.row{
+				gap: 20px;
+			}
+		}
+	}
+}
+
+@media all and (max-width: 480px) {
+	section.profile{
+		h1, h2{
+			text-align: center;
+		}
+		text-align: center;
+		.profile__header-user{
+			align-items: center;
+			text-align: center;
+		}
+		.row{
+			justify-content: center;
+		}
+		.profile__header-task{
+			width: 100%;
+			flex-shrink: 0;
+			text-align: center;
+		}
+	}
+}
+

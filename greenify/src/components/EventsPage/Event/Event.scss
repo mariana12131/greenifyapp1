@@ -1,0 +1,42 @@
+.events__card{
+	width: 100%;
+	max-width: 600px;
+	padding: 30px;
+	background-color: #334B35;
+	color: white;
+	border-radius: 25px;
+
+	img{
+		width: 100%;
+		border-radius: 20px;
+
+	}
+
+	.row{
+		align-items: center;
+		gap: 20px;
+	}
+
+	p{
+		margin: 20px 0 !important;
+	}
+
+	h3{
+		font-size: 1.7rem;
+		margin-top: 30px;
+	}
+
+	.events__card-info{
+		img{
+			width: 48px;
+			height: 48px;
+			border-radius: 0;
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	.events__card{
+		padding: 15px;
+	}
+}

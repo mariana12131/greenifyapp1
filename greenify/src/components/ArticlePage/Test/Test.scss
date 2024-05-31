@@ -1,0 +1,113 @@
+section.test{
+	margin: 0 auto;
+	max-width: 1100px;
+	padding: 0 0 70px 0;
+	.notify{
+		margin-top: 30px;
+	}
+	h2{
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+	}
+	.btn{
+		height: 35px;
+		margin-top: 20px;
+	}
+	.test__question{
+		margin: 20px 0;
+		.row{
+			gap: 10px;
+			margin: 10px 0;
+		}
+	}
+	.test__modal{
+		position: fixed;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+		z-index: -1;
+		opacity: 0;
+		transition: all 0.3s;
+		background: rgba(0, 0, 0, 0.689);
+		.test__modal-window{
+			max-width: 900px;
+			flex-shrink: 0;
+			width: 100%;
+			height: 80vh;
+			padding: 30px;
+			border-radius: 25px;
+			background-color: #F6EEE1;
+			transition: all 0.3s;
+			transform: scale(0.01);
+		}
+		.test__modal-wrapper{
+			overflow: hidden;
+			position: relative;
+			height: 100%;
+		}
+		.close{
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			font-size: 18px;
+			background: none;
+			border: none;
+			cursor: pointer;
+			width: 25px;
+			height: 25px;
+		}
+		form{
+			overflow-y: scroll;
+			height: calc(100% - 70px);
+			padding-right: 15px;
+		}
+		form::-webkit-scrollbar-track{
+			width: 6px;
+		}
+		form::-webkit-scrollbar-thumb{
+			background-color: rgb(140, 0, 0);
+		}
+		.test__modal-result{
+			height: 100%;
+			text-align: center;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			h3{
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+			}
+			.btn{
+				line-height: 35px;
+				text-decoration: none;
+				font-weight: 400;
+			}
+		}
+	}
+	.test__modal.active{
+		z-index: 1;
+		opacity: 1;
+		.test__modal-window{
+			transform: scale(1);
+		}
+	}
+}
+
+@media all and (max-width: 768px) {
+	section.test{
+		.test__modal{
+			.test__modal-window{
+				width: 100%;
+				height: 100vh;
+				border-radius: 0;
+				padding: 40px 10px;
+			}
+		}
+	}
+}
